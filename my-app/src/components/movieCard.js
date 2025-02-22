@@ -2,6 +2,7 @@ import React from 'react'
 import { IMG_CDN } from '../utils/constants'
 import { useNavigate } from 'react-router-dom'
 const MovieCard = ({ posterPath,id }) => {
+  console.log("Image URL:", IMG_CDN + posterPath);
   const navigate=useNavigate()
   return (
     <div  onClick={()=>  navigate(`/video/${id}`)} className="  w-36 h-60 max-sm:w-14 max-sm:h-24 mt-7 rounded  transition-all duration-300 ease-out 
@@ -9,7 +10,7 @@ const MovieCard = ({ posterPath,id }) => {
       <img 
         className="w-full h-full object-cover rounded " 
         alt="imgcard" 
-        src={IMG_CDN + posterPath} 
+        src={`https://image.tmdb.org/t/p/w500${posterPath}`}
       />
     </div>
   )
