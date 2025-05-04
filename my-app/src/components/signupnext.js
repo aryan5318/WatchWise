@@ -49,24 +49,35 @@ const Signupnext = ({ email,setEmail }) => {
   
  }
   return (
-    <>
+    <div>
 
     <Header/>
     
-    <div className=' absolute inset-0  flex  items-center justify-center'>
-    <div className=' flex flex-col w-[400px] h-[400px] '>
-       <h1 className='text-3xl font-semibold mb-3'>Enter your name and create a password to start</h1>
-       <p className='text-xl font-semibold mb-3'>Just a few more steps and you're done!
+    <div className=' absolute inset-0 z-10  flex  items-center justify-center'>
+    <div className=' flex flex-col z-10 w-[400px] h-[400px] '>
+       <h1 className='text-3xl text-white font-semibold mb-3'>Enter your name and create a password to start</h1>
+       <p className='text-xl text-white font-semibold mb-3'>Just a few more steps and you're done!
        We hate paperwork, too.
        </p> 
        <input ref={name}className="mb-5 h-10 text-black p-4 border rounded border-black " type="text" placeholder="Enter Your FullName" />
        <input ref={password} className="mb-5 h-10 text-black p-4 border rounded border-black " type="password" placeholder="Password" />
        <p className=" text-red-700 mb-3 text-xs font-semibold">{error}</p>
-       <button type='submit'  onClick={handleButtonClick} className="bg-red-700 text-white h-10 rounded ">Sign In</button>
+       <button type='submit'  onClick={handleButtonClick} className="bg-purple-800 text-white h-10 rounded ">Sign In</button>
     </div>
     </div>
+    <div className="relative h-screen  w-full">
+    
+        <img
+          className="absolute inset-0 w-full h-full object-cover"
+          src="https://assets.nflxext.com/ffe/siteui/vlv3/638e9299-0637-42d1-ba39-54ade4cf2bf6/web/IN-en-20250203-TRIFECTA-perspective_46eb8857-face-4ea6-b901-dbf22b461369_small.jpg"
+          alt="background"
+        />
+          <div className="absolute h-screen  w-full bg-black/50"></div>
+       
+      </div>
    
-    </>
+   
+    </div>
   )
 }
 

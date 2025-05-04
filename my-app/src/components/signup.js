@@ -58,7 +58,7 @@ const Signup = ({ email, setEmail }) => {
             />
             <button
               onClick={handleButtonClick}
-              className="bg-red-700 text-white rounded w-48 font-bold h-12"
+              className="bg-purple-800 text-white rounded w-48 font-bold h-12"
             >
               Get Started
             </button>

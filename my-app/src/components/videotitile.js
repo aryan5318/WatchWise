@@ -7,7 +7,7 @@ const VideoTitle = ({title,overview}) => {
         <p className='w-[400px] m-1 text-white text-sm max-sm:hidden '>{overview}</p>
         <div className='flex'>
             <button className='mr-2 bg-white h-9 p-1.5 rounded text-black max-sm:w-11 w-24 max-sm:h-8 max-sm:text-sm flex text-center justify-center font-bold '><FaPlay className='mt-1 mr-2'/>Play</button>
-            <button className=' bg-gray-500 font-bold rounded w-36 p-2 max-sm:w-24 max-sm:h-8 max-sm:text-sm text-white'>More Info</button>
+            <button className=' bg-purple-800 font-bold rounded w-36 p-2 max-sm:w-24 max-sm:h-8 max-sm:text-sm text-white'>More Info</button>
         </div>
         </div>)
 }

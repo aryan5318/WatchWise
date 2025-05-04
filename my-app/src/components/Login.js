@@ -41,7 +41,7 @@ const Login = () => {
         <input ref={email} className="mb-5 h-10 text-white p-4 bg-black/70 border-[0.1px] border-white rounded" type="text" placeholder="Email"   />
         <input ref={password} className="mb-5 h-10 text-white p-4 bg-black/70 border rounded border-white" type="password" placeholder="Password" />
         <p className=" text-red-700 mb-3 text-xs font-semibold">{errorMessage}</p>
-        <button type='submit' onClick={handleButtonClick} className="bg-red-700 text-white h-10 rounded">Sign In</button>
+        <button type='submit' onClick={handleButtonClick} className="bg-purple-800 text-white h-10 rounded">Sign In</button>
         <h2 className="text-white mb-2 mt-2 ml-36 ">OR</h2>
         <button className="bg-gray-400/30 text-white  mb-4 h-10 rounded">Use a sign-in code</button>
         <a className="text-white ml-20 mb-3">Forgot password?</a>

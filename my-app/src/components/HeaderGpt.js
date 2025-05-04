@@ -8,11 +8,9 @@ import {  onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser,removeUser } from "../utils/userslice";
 import {toggleGptSearchView} from '../utils/gptslice';
-import { IoAirplane } from "react-icons/io5";
-
 import NewAIIcon from './NewAiIcon';
-
-const Headerbrowse = () => {
+import { IoAirplane } from 'react-icons/io5';
+const HeaderGpt = () => {
    const dispatch=useDispatch()
     const navigate=useNavigate();
     const [isopen,setIsopen]=useState(false);
@@ -46,16 +44,15 @@ const Headerbrowse = () => {
         });
     }
   return (<>
-    <div className='flex  w-screen mt-24 max-sm:mt-3 absolute z-10  bg-gradient-to-b from-black'>
-    
-   <NewAIIcon className=' absolute ml-5  mt-2'/>
+    <div className='flex   w-screen  max-sm:mt-3 absolute z-10  bg-gradient-to-b from-black'>
+    <NewAIIcon className='  ml-5  mt-2'/>
     <h2 className='text-white font-bold ml-1 mt-5'>WatchWise</h2>
     <IoAirplane onClick={toggleGptSearch} className='text-purple-800 absolute rounded h-8 w-8 mt-3 ml-[1250px] '/>
   
-    <CiFaceMeh onClick={()=>setIsopen(!isopen)} className='w-10 h-10 mt-2 ml-[1300px] cursor-pointer absolute text-purple-800 ' />
+    <CiFaceMeh onClick={()=>setIsopen(!isopen)} className='w-10 h-10 mt-2 ml-[1150px] cursor-pointer text-purple-800 ' />
     </div> 
     {isopen && <div>
-        <ul className="py-3 max-sm:ml-[250px] max-sm:mt-16 ml-[1200px] bg-black absolute z-10 mt-40 rounded   w-28">
+        <ul className="py-3 max-sm:ml-[250px] max-sm:mt-16 ml-[1250px] bg-purple-800 absolute z-10 rounded mt-16  w-28">
             <li className="px-4 py-2 text-white font-bold cursor-pointer hover:underline decoration-white">Profile</li>
             <li className="px-4 py-2pointer text-white font-bold cursor-pointer hover:underline decoration-white">Settings</li>
                
@@ -67,4 +64,4 @@ const Headerbrowse = () => {
   )
 }
 
-export default Headerbrowse
+export default HeaderGpt
