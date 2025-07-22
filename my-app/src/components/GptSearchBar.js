@@ -59,7 +59,7 @@ Do NOT write anything other than the movie list.
   
   return (
     <div className=' h-16 md:w-[900px] flex items-center justify-center  '>
-       <AIIcon /><input ref={MovieRef} className='md:w-96 md:h-10 md:pl-3 w-40 h-10 text-black border-2 border-purple-800  font-bold rounded ' placeholder='Which type of movie you want to watch'/>
+       <AIIcon/><input ref={MovieRef} className='md:w-96 md:h-10 md:pl-3 w-40 h-10 text-black border-2 border-purple-800  font-bold rounded ' placeholder='Which type of movie you want to watch'/>
     <button className='bg-purple-800 w-24 h-10 ml-2 rounded hover:bg-pink-800' onClick={main}>Search</button>
     </div>
   )
