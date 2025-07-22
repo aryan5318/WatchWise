@@ -46,7 +46,7 @@ const Headerbrowse = () => {
         });
     }
   return (<>
-    <div className='flex  w-screen mt-24 absolute z-10  bg-gradient-to-b from-black'>
+    <div className='flex  w-screen md:mt-24 mt-5 absolute z-10  bg-gradient-to-b from-black'>
     
    <NewAIIcon className=' absolute ml-5  mt-2 '/>
     <h2 className='text-white font-bold ml-1 mt-5'>WatchWise</h2>

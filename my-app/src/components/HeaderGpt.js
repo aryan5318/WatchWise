@@ -44,7 +44,7 @@ const HeaderGpt = () => {
         });
     }
   return (<>
-    <div className='flex   w-screen  max-sm:mt-3 absolute z-10  bg-gradient-to-b from-black'>
+    <div className='flex   w-screen   absolute z-10  bg-gradient-to-b from-black'>
     <NewAIIcon className='  ml-5  mt-2'/>
     <h2 className='text-white font-bold ml-1 mt-5'>WatchWise</h2>
     <IoAirplane onClick={toggleGptSearch} className="text-purple-800 cursor-pointer absolute rounded h-8 w-8 mt-3 ml-[270px] md:ml-[1250px]"/>
