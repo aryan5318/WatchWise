@@ -9,9 +9,9 @@ export const GptMovieSuggestion = () => {
   const movieData = useSelector((store) => store?.gptMovies?.GptMovieData);
 
   if (!movieData || movieData.length === 0) {
-    return <div className='w-[900px] ml-24'>
+    return <div className='md:w-[900px] w-[200px] md:ml-24 ml-8'>
      
-      <p className="text-black mt-4 text-7xl">Discover Your Perfect Movie with <span className='text-purple-800'>AI Recommendations</span></p>
+      <p className="text-black mt-4 md:text-7xl text-3xl">Discover Your Perfect Movie with <span className='text-purple-800'>AI Recommendations</span></p>
     <p className='font-thin'>Find your next favorite movie with our <span className='text-purple-800'>AI-powered recommendation system</span> . Get personalized suggestions based on your unique preferences and discover films you’ll love!</p>
     </div> }
 

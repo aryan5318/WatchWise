@@ -18,7 +18,7 @@ const Login = () => {
       if(result===null){
         signInWithEmailAndPassword(auth, email.current.value,password.current.value)
   .then((userCredential) => {
-    // Signed in 
+ 
     const user = userCredential.user;
     console.log(user)
    

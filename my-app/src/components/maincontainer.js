@@ -5,11 +5,11 @@ import { useSelector } from 'react-redux'
 const MainContainer = () => {
     const movies=useSelector((store)=>store.movies?.addNowPlayingMovies);
     if(!movies) return null;
-    const mainMovie=movies[4]
+    const mainMovie=movies[3]
    
     return (<>
-     <VideoTitle title={mainMovie?.title} overview={mainMovie.
-overview}/>
+     <VideoTitle title={mainMovie?.title} overview={mainMovie?.
+overview} id={mainMovie?.id}/>
      <Backgroundvideo id={mainMovie.id}/>
     </>)
 }

@@ -7,8 +7,9 @@ import { useSelector } from 'react-redux'
 
 const VideoCardComponent = () => {
   const {id}=useParams()
-  const trailerVideo=useSelector(store=>store.movies?.trailerVideo)
+  
   UseMovieTrailer(id)
+  const trailerVideo=useSelector(store=>store.movies?.trailerVideo)
 
 
   if(!trailerVideo) return ;
