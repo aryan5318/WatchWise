@@ -7,7 +7,7 @@ const LikeMovie=async(email,movieId)=>{
     return;
   }
     try{
-        const res=await axios.post('https://backend-watchwise.onrender.com//api/preferences/like',{
+        const res=await axios.post('https://backend-watchwise.onrender.com/api/preferences/like',{
             email,
             movieId
         });
@@ -20,7 +20,7 @@ const LikeMovie=async(email,movieId)=>{
 }
  export const DislikedMovies=async(email,movieId)=>{
    try{
-      const res=axios.post("https://backend-watchwise.onrender.com/preferences/deleteliked",{
+      const res=axios.post("https://backend-watchwise.onrender.com/api/preferences/deleteliked",{
          email,
          movieId
       }
@@ -33,7 +33,7 @@ const LikeMovie=async(email,movieId)=>{
 }
 export const CheckIfLiked = async (email, movieId) => {
   try {
-    const response = await axios.get('https://backend-watchwise.onrender.com//isLiked', {
+    const response = await axios.get('https://backend-watchwise.onrender.com/api/preferences/isLiked', {
       params: { email, movieId }
     });
  if(response)
@@ -47,7 +47,7 @@ export const CheckIfLiked = async (email, movieId) => {
 
 export const watchHistoryf=async(email,movieId)=>{
   try{ 
-   const res= await axios.post("https://backend-watchwise.onrender.com//history",{
+   const res= await axios.post("https://backend-watchwise.onrender.com/api/preferences/history",{
      email,
      movieId
    })
@@ -61,7 +61,7 @@ export const watchHistoryf=async(email,movieId)=>{
 }
 export const getWatchHistory=async(email)=>{
   try{
-    const response= await axios.get("https://backend-watchwise.onrender.com/",  {params:{email}})
+    const response= await axios.get("https://backend-watchwise.onrender.com/api/preferences/watchhistory",  {params:{email}})
     return response.data;
   } catch(error){
 
@@ -69,7 +69,7 @@ export const getWatchHistory=async(email)=>{
 }
 export const geminiUser=async(email)=>{
    try{
-    const response= await axios.get("https://backend-watchwise.onrender.com/",  {params:{email}})
+    const response= await axios.get("https://backend-watchwise.onrender.com/api/preferences/gemini",  {params:{email}})
     return response.data;
   } catch(error){
 

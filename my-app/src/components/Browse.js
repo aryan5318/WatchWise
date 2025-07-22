@@ -16,7 +16,7 @@ const Browse = () => {
 
      const showGptSearch = useSelector((store) => store.gpt.showGptSearch)
      const movies = useSelector((store) => store.movies.hororMovies)
-     console.log(movies)
+     
      useNowPlayingMovies();
      usePopularMovies();
      useUpcomingMovies();
