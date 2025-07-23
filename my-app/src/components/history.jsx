@@ -4,6 +4,7 @@ import MovieCard from './movieCard';
 import MovieCard1 from './historycard';
 import { addHistoryData } from '../utils/gptMovieSlice';
 import { useDispatch } from 'react-redux';
+import './movieList.css';  
 
 const History = ({ title, movies, email }) => {
   const [movieDetails, setMovieDetails] = useState([]);
@@ -48,7 +49,7 @@ const History = ({ title, movies, email }) => {
       <h1 className='text-white font-bold ml-28 font-serif absolute mt-10'>
         {title}
       </h1>
-      <div className='flex relative max-sm:h-40 overflow-x-scroll overflow-y-hidden scrollbar-hide h-96 pl-14'>
+      <div className='flex relative overflow-x-scroll overflow-y-hidden h-96 pl-14 hide-scrollbar'>
         <div className='flex gap-5 max-sm:h-40 h-96 p-14'>
           
           {movieDetails.map((movie) => (
